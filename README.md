@@ -34,7 +34,7 @@ This project implements a real-time network traffic analysis system using machin
 ## Interface Preview
 
 ### Warning Alert Interface
-![Warning Alert Interface](docs\images\warning_alert.jpg)
+![Warning Alert Interface](docs/images/warning_alert.jpg
 *The warning alert interface shows real-time detection of suspicious network traffic with detailed information about the detected threats.*
 
 ## Model Generation
