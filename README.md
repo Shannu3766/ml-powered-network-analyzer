@@ -31,6 +31,31 @@ This project implements a real-time network traffic analysis system using machin
 - Alert system for suspicious traffic
 - Interactive web interface using Streamlit
 
+## Interface Preview
+
+### Warning Alert Interface
+![Warning Alert Interface](docs/images/warning_alert.JPG)
+*The warning alert interface shows real-time detection of suspicious network traffic with detailed information about the detected threats.*
+
+## Model Generation
+
+The trained models in the `models/` directory are generated when you run the Jupyter notebooks in the `notebooks/` directory:
+
+1. `random_forest.ipynb`: Generates `models/random_forest.pkl`
+2. `random_forest_xg_boost_without_smote.ipynb`: Generates XGBoost model
+3. `xg_boost.ipynb`: Generates additional XGBoost model
+
+To generate the models:
+1. Navigate to the `notebooks/` directory
+2. Run the notebooks in order:
+   ```bash
+   jupyter notebook
+   ```
+3. Execute all cells in each notebook
+4. The models will be automatically saved to the `models/` directory
+
+Note: Make sure to run the notebooks before using the main application, as the application requires these trained models to function.
+
 ## Requirements
 
 - Python 3.7+
@@ -51,6 +76,7 @@ This project implements a real-time network traffic analysis system using machin
    ```bash
    pip install -r requirements.txt
    ```
+3. Generate the models by running the notebooks (see Model Generation section)
 
 ## Usage
 
